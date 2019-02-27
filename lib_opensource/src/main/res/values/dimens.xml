@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <!--通用文字大小-->
+    <dimen name="common_word">16dp</dimen>
+    <!--通用左padding-->
+    <dimen name="common_padding">10dp</dimen>
+    <!--通用左paddingleft-->
+    <dimen name="common_paddingleft">10dp</dimen>
+    <!--通用右paddingright-->
+    <dimen name="common_paddingright">10dp</dimen>
+    <!--分割线高度1px或1dp-->
+    <dimen name="height_divider">1dp</dimen>
+    <!--间隔高度11dp-->
+    <dimen name="height_jiange">11dp</dimen>
+
+    <dimen name="size_5">5dp</dimen>
+    <!--通用文字10dp-->
+    <dimen name="size_10">10dp</dimen>
+    <!--通用文字11dp-->
+    <dimen name="size_11">11dp</dimen>
+    <!--通用文字12-->
+    <dimen name="size_12">12dp</dimen>
+    <!--通用文字13dp-->
+    <dimen name="size_13">13dp</dimen>
+    <!--通用文字14dp-->
+    <dimen name="size_14">14dp</dimen>
+    <!--通用文字14dp-->
+    <dimen name="size_15">15dp</dimen>
+    <!--通用文字16dp-->
+    <dimen name="size_16">16dp</dimen>
+    <!--通用文字17dp-->
+    <dimen name="size_17">17dp</dimen>
+    <!--通用文字18dp-->
+    <dimen name="size_18">18dp</dimen>
+    <!--通用文字20dp-->
+    <dimen name="size_20">20dp</dimen>
+    <!--通用文字23dp-->
+    <dimen name="size_23">23dp</dimen>
+
+    <!--通用按钮大圆角-->
+    <dimen name="big_corner">40dp</dimen>
+    <!--通用按钮小圆角-->
+    <dimen name="small_corner">5dp</dimen>
+
+
+    <!--加载进度框-->
+    <dimen name="dialog_minwindth">150dp</dimen>
+    <dimen name="dialog_padding">9dp</dimen>
+    <dimen name="dialog_pbartext">36dp</dimen>
+    <dimen name="dialog_textMarginLeft">6dp</dimen>
+    <dimen name="dialog_pbarloading">46dp</dimen>
+
+
+
+    <dimen name="week_bar_height">36dp</dimen>
+    <dimen name="week_calendar_height">48dp</dimen>
+    <dimen name="month_calendar_height">288dp</dimen>
+    <dimen name="calendar_min_distance">5dp</dimen>
+    <dimen name="auto_scroll_distance">15dp</dimen>
+    <integer name="calendar_text_size">13</integer>
+
+</resources>
