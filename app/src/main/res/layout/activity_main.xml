@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="main"
+                type="com.example.mvvm.MainViewModel"/>
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+        <FrameLayout
+                android:id="@+id/fl_main_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_color"
+                binding:onClickCommand="@{main.netWorkClick}"/>
+
+        <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/shape_tab_bg"/>
+
+            <LinearLayout
+                    android:id="@+id/ll_main_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <CheckBox
+                        android:id="@+id/cb_main1"
+                        style="@style/BottomTabStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:drawableTop="@drawable/radio_btn1_selector"
+                        android:gravity="center"
+                        android:text="首页"/>
+
+                <CheckBox
+                        android:id="@+id/cb_main2"
+                        style="@style/BottomTabStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:drawableTop="@drawable/radio_btn2_selector"
+                        android:gravity="center"
+                        android:text="医讯"/>
+
+                <CheckBox
+                        android:id="@+id/cb_main4"
+                        style="@style/BottomTabStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:drawableTop="@drawable/radio_btn4_selector"
+                        android:gravity="center"
+                        android:text="患者管理"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

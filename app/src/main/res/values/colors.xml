@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--状态栏颜色-->
+    <color name="toolbar_color">#FF8000</color>
+
+    <!--页面背景色-->
+    <color name="bg_color">#ffffff</color>
+
+    <!-- app主色调-->
+    <color name="app_common_green">#FF8000</color>
+    <!-- app主色调 透明效果-->
+    <color name="app_common_green_80">#ccFF8000</color>
+
+    <!-- 文字颜色-->
+    <color name="common_word">#323232</color>
+    <!-- 辅文颜色-->
+    <color name="common_other">#656565</color>
+    <!-- 分割线颜色-->
+    <color name="divider_color">#E5E5E5</color>
+    <!-- 分割线颜色-->
+    <color name="divider">#E5E5E5</color>
+    <!-- 分割线颜色 透明效果-->
+    <color name="divider_color_80">#50E5E5E5</color>
+    <!-- 分割线颜色2-->
+    <color name="divider_main_color">#c1c1c1</color>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+    <!--白色 95透明度-->
+    <color name="white_95">#F2ffffff</color>
+    <!--白色-->
+    <color name="common_white">#ffffff</color>
+    <!--透明-->
+    <color name="translucent">#99000000</color>
+    <!--对话框背景色-->
+    <color name="dialog_bg_content_color">#aa000000</color>
+    <!--文字提示颜色-->
+    <color name="common_hint">#ADADAD</color>
+    <!--文字灰色颜色-->
+    <color name="common_gray">#ADADAD</color>
+    <!--文字预警的颜色-->
+    <color name="common_yujing">#FE5B00</color>
+    <!--文字预警的颜色 透明效果-->
+    <color name="common_yujing_80">#ccFE5B00</color>
+
+    <color name="line_color">#cacaca</color>
+    <!--页面间隔颜色-->
+    <color name="common_jiange">#f7f7f7</color>
+    <!--已治疗过的颜色-->
+    <color name="common_selected">#ffd2b9</color>
+    <!--通用红色-->
+    <color name="common_red">#ff1717</color>
+    <!--通用红色 透明效果-->
+    <!--图表 警戒线颜色-->
+    <color name="jing_jie_xian">#67CD2F</color>
+    <!--ffc993-->
+    <color name="color_ffc993">#ffc993</color>
+    <!--FFFAF6-->
+    <color name="color_FFFAF6">#FFFAF6</color>
+    <!--fe5b00-->
+    <color name="color_fe5b00">#FE5B00</color>
+    <!--FAFAFA-->
+    <color name="color_FAFAFA">#FAFAFA</color>
+    <!--9A9A9A-->
+    <color name="color_9A9A9A">#9A9A9A</color>
+    <!--FFBF81-->
+    <color name="color_FFBF81">#FFBF81</color>
+    <!--F2F2F2-->
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <!--FF9C00-->
+    <color name="color_FF9C00">#FF9C00</color>
+    <!--AEAEAE-->
+    <color name="color_AEAEAE">#AEAEAE</color>
+    <!--4C4C4C-->
+    <color name="color_4C4C4C">#4C4C4C</color>
+    <!--858585-->
+    <color name="color_858585">#858585</color>
+    <!--f0f0f0-->
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <!--7A7A7A-->
+    <color name="color_7A7A7A">#7A7A7A</color>
+    <!--6C6C6C-->
+    <color name="color_6C6C6C">#6C6C6C</color>
+    <!--FF8B00 透明效果-->
+    <color name="color_FF8B00">#25FF8B00</color>
+    <!--FF8000-->
+    <color name="color_FF8000">#FF8000</color>
+    <!--FFF3E6-->
+    <color name="color_FFF3E6">#FFF3E6</color>
+    <!--FFEDD7-->
+    <color name="color_FFEDD7">#FFEDD7</color>
+    <!--FFAF62-->
+    <color name="color_FFAF62">#FFAF62</color>
+    <!--F3F3F3-->
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <!--F3F3F3 透明度-->
+    <color name="color_F3F3F3_80">#50F3F3F3</color>
+    <!--FF9453-->
+    <color name="color_FF9453">#FF9453</color>
+    <!--C47BEF-->
+    <color name="color_C47BEF">#C47BEF</color>
+    <!--FCE0B1-->
+    <color name="color_FCE0B1">#FCE0B1</color>
+    <!--808080-->
+    <color name="color_808080">#808080</color>
+    <!--76A3E9-->
+    <color name="color_76A3E9">#76A3E9</color>
+    <!--F8F8F8-->
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <!--FE5B00-->
+    <color name="color_FE5B00">#FE5B00</color>
+    <!--535353-->
+    <color name="color_535353">#535353</color>
+    <!--DADADA-->
+    <color name="color_DADADA">#DADADA</color>
+    <!--F6F6F6-->
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <!--F7F7F7-->
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <!--82D8B9-->
+    <color name="color_82D8B9">#82D8B9</color>
+    <!--d8d8d8-->
+    <color name="color_d8d8d8">#d8d8d8</color>
+
+
+    <!--通用黄色-->
+    <color name="common_yellow">#ff6701</color>
+
+
+    <!--CropImageView中用到-->
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="transparent_black">#7F000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#A3A3A3</color>
+    <color name="black">#000000</color>
+
+    <!--扫一扫-->
+    <color name="result_view">#000000</color>
+    <color name="viewfinder_mask">#000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!--edittext 光标下划线颜色-->
+    <color name="cursor_color">#f28b05</color>
+
+    <color name="btn_bg_color_normal">#FCB87A</color>
+    <color name="btn_bg_color_press">#F8801C</color>
+
+
+    <color name="calendar_bg_color">#FFFFFF</color>
+    <color name="holiday_text_color">#9082BD</color>
+    <color name="select_circle_color">#FF8594</color>
+    <color name="colorBackground">#F0F1F5</color>
+
+    <color name="color_FF8E00">#FF8E00</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+
+    <color name="color_7ED321">#7ED321</color>
+    <color name="color_F1F1F1">#F1F1F1</color>
+
+    <color name="color_15FF8E00">#26FF8E00</color>
+
+    <color name="color_ffcf57">#FFCF57 </color>
+    <color name="color_c4302a">#C4302A</color>
+    <color name="color_D0021B">#D0021B</color>
+    <color name="color_007afe"> #007AFE</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_09ACF8">#09ACF8</color>
+    <color name="color_417505">#417505</color>
+</resources>
