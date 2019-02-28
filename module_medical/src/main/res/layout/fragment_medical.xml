@@ -1,51 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/bg_color"
-              android:orientation="vertical">
+<layout>
 
-   <!-- <com.zzmmc.doctor.view.CustomListView
-            android:id="@+id/listView"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:cacheColorHint="@color/transparent"
-            android:divider="@color/transparent"
-            android:dividerHeight="0dp"
-            android:listSelector="@color/transparent"
-            android:overScrollMode="never"
-            android:visibility="gone"
-            tools:visibility="gone" />-->
+    <data>
+        <variable
+                name="meViewModel"
+                type="com.example.module_medical.NewsViewModel"/>
 
+        <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers"/>
 
-    <LinearLayout
-            android:id="@+id/ll_nodata"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            tools:visibility="visible">
+        <import type="me.goldze.mvvmhabit.binding.viewadapter.recyclerview.LineManagers"/>
+    </data>
 
-        <Button android:id="@+id/btn"
-                android:text="btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:binding="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/bg_color"
+                  android:orientation="vertical">
 
-        <ImageView
-                android:id="@+id/iv_nodata"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="@drawable/ic_nodata_search" />
+        <!-- <com.zzmmc.doctor.view.CustomListView
+                 android:id="@+id/listView"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:cacheColorHint="@color/transparent"
+                 android:divider="@color/transparent"
+                 android:dividerHeight="0dp"
+                 android:listSelector="@color/transparent"
+                 android:overScrollMode="never"
+                 android:visibility="gone"
+                 tools:visibility="gone" />-->
 
-        <TextView
-                android:id="@+id/tv_nodata"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="暂时没有相关数据"
-                android:textColor="@color/color_9A9A9A"
-                android:textSize="@dimen/size_17" />
+        <!-- <LinearLayout
+                 android:id="@+id/ll_nodata"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 tools:visibility="visible">
+
+             <ImageView
+                     android:id="@+id/iv_nodata"
+                     android:layout_width="140dp"
+                     android:layout_height="140dp"
+                     android:src="@drawable/ic_nodata_search" />
+
+             <TextView
+                     android:id="@+id/tv_nodata"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="36dp"
+                     android:text="暂时没有相关数据"
+                     android:textColor="@color/color_9A9A9A"
+                     android:textSize="@dimen/size_17" />
+         </LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                binding:adapter="@{meViewModel.adapter}"
+                binding:itemBinding="@{meViewModel.itemBinding}"
+                binding:items="@{meViewModel.observableList}"
+                binding:layoutManager="@{LayoutManagers.linear()}"
+                binding:lineManager="@{LineManagers.horizontal()}"/>
     </LinearLayout>
-</LinearLayout>
 
+</layout>

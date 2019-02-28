@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ccFF8000</color>
-    <color name="colorPrimaryDark">#ccFF8000</color>
+    <color name="colorPrimary">#FF8000</color>
+    <color name="colorPrimaryDark">#FF8000</color>
     <color name="colorAccent">#D81B60</color>
 
     <!--状态栏颜色-->

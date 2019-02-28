@@ -63,7 +63,7 @@
                         android:checked="false"
                         android:drawableTop="@drawable/radio_btn2_selector"
                         android:gravity="center"
-                        android:text="医讯"/>
+                        android:text="文章"/>
 
                 <CheckBox
                         android:id="@+id/cb_main4"
@@ -74,7 +74,7 @@
                         android:checked="false"
                         android:drawableTop="@drawable/radio_btn4_selector"
                         android:gravity="center"
-                        android:text="患者管理"/>
+                        android:text="图片"/>
 
             </LinearLayout>
         </LinearLayout>

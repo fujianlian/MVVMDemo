@@ -25,7 +25,7 @@ class MedicalApplication:BaseApplication() {
         ViseHttp.init(this)
         ViseHttp.CONFIG()
             //配置请求主机地址
-            .baseUrl("http://gank.io/")
+            .baseUrl("https://gank.io/")
             .setCookie(true)
             //配置日志拦截器
             .interceptor(
