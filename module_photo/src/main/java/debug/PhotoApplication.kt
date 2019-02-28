@@ -6,7 +6,7 @@ import com.vise.xsnow.http.ViseHttp
 import com.vise.xsnow.http.interceptor.HttpLogInterceptor
 import me.goldze.mvvmhabit.base.BaseApplication
 
-class MedicalApplication : BaseApplication() {
+class PhotoApplication : BaseApplication() {
 
     override fun onCreate() {
         super.onCreate()

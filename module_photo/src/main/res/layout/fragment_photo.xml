@@ -3,12 +3,11 @@
 
     <data>
         <variable
-                name="meViewModel"
-                type="com.example.module_medical.NewsViewModel"/>
+                name="photoViewModel"
+                type="com.example.module_photo.PhotoViewModel"/>
 
         <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers"/>
 
-        <import type="me.goldze.mvvmhabit.binding.viewadapter.recyclerview.LineManagers"/>
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,11 +20,10 @@
         <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                binding:adapter="@{meViewModel.adapter}"
-                binding:itemBinding="@{meViewModel.itemBinding}"
-                binding:items="@{meViewModel.observableList}"
-                binding:layoutManager="@{LayoutManagers.linear()}"
-                binding:lineManager="@{LineManagers.horizontal()}"/>
+                binding:adapter="@{photoViewModel.adapter}"
+                binding:itemBinding="@{photoViewModel.itemBinding}"
+                binding:items="@{photoViewModel.observableList}"
+                binding:layoutManager="@{LayoutManagers.linear()}"/>
     </LinearLayout>
 
 </layout>

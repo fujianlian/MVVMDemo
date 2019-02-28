@@ -20,7 +20,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
 
     override fun initData() {
         // 获取Fragment
-        val fragment = ARouter.getInstance().build("/medical/main").navigation() as Fragment
+        val fragment = ARouter.getInstance().build("/photo/main").navigation() as Fragment
         supportFragmentManager.beginTransaction().replace(R.id.fl_main_container, fragment).commit()
     }
 }

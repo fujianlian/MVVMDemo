@@ -1,7 +1,6 @@
-package com.example.module_medical
+package com.example.lib_opensource.bean
 
-class NewsBean {
-
+class GankBean {
     var desc = ""
     var who = ""
     var url = ""
