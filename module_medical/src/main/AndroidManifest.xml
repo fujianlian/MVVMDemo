@@ -3,6 +3,8 @@
           package="com.example.module_medical">
 
     <application>
+        <activity android:name=".WebActivity">
+        </activity>
         <activity android:name=".MedicalActivity">
         </activity>
     </application>
