@@ -25,7 +25,34 @@ platform :android do
   lane :beta do
     gradle(task: "clean assembleRelease")
     pgyer(api_key: "700a8c64e633995c5cc97d58fd13d5cc", user_key: "81c13e2b7a8be0c3307cd95488369548")
-    
+
+    # 钉钉推送
+
+    app_name = "app更新了"
+    dingTalk_url = "https://oapi.dingtalk.com/robot/send?access_token=eddaa83cd816b1e26af65d9833e3119d734824664a9b56c88a025663378484aa"
+
+    markdown =
+      {
+        msgtype: "link",
+        link: {
+            text: "已经打包并上传到蒲公英",
+            title: app_name,
+            picUrl: "https://static.pgyer.com/static-20190305/assets/img/default-icon.png",    #应用的icon
+            messageUrl: "https://www.pgyer.com/aQhr" 
+          }
+        }
+
+       uri = URI.parse(dingTalk_url)
+       https = Net::HTTP.new(uri.host, uri.port)
+       https.use_ssl = true
+
+       request = Net::HTTP::Post.new(uri.request_uri)
+       request.add_field('Content-Type', 'application/json')
+       request.body = markdown.to_json
+
+       response = https.request(request)
+       puts "Response #{response.code} #{response.message}: #{response.body}"
+
     # sh "your_script.sh"
     # You can also use other beta testing services here
   end
