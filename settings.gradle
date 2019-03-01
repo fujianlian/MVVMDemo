@@ -1,1 +1,1 @@
-include ':app', ':lib_opensource', ':module_medical', ':module_photo'
+include ':app', ':lib_opensource', ':module_medical', ':module_photo', ':module_login'

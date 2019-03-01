@@ -1,4 +1,4 @@
-if (isModule.toBoolean()) {
+if (isModuleLogin.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -38,7 +38,7 @@ android {
     }
     sourceSets {
         main {
-            if (isModule.toBoolean()) {
+            if (isModuleLogin.toBoolean()) {
                 manifest.srcFile 'src/main/module/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
@@ -61,10 +61,10 @@ kapt {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     api project(":lib_opensource")
-    if (!isModuleLogin.toBoolean()) {
-        implementation project(":module_login")
-    }
+
     implementation 'com.alibaba:arouter-api:1.4.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }

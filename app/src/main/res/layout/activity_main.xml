@@ -1,82 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:binding="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <data>
-
-        <variable
-                name="main"
-                type="com.example.mvvm.MainViewModel"/>
-    </data>
-
-    <LinearLayout
+    <FrameLayout
+            android:id="@+id/fl_main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
+            android:layout_weight="1"
+            android:background="@color/bg_color"/>
 
-        <FrameLayout
-                android:id="@+id/fl_main_container"
+    <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <View
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/bg_color"
-                binding:onClickCommand="@{main.netWorkClick}"/>
+                android:layout_height="3dp"
+                android:background="@drawable/shape_tab_bg"/>
 
-        <LinearLayout
-                android:id="@+id/ll_main"
+        <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="48dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@drawable/shape_tab_bg"/>
+            <RadioButton
+                    android:id="@+id/checkbox1"
+                    style="@style/BottomTabStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableTop="@drawable/radio_btn1_selector"
+                    android:gravity="center"
+                    android:text="首页"/>
 
-            <LinearLayout
-                    android:id="@+id/ll_main_bottom"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:background="@android:color/white"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+            <RadioButton
+                    android:id="@+id/checkbox2"
+                    style="@style/BottomTabStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:drawableTop="@drawable/radio_btn2_selector"
+                    android:gravity="center"
+                    android:text="文章"/>
 
-                <CheckBox
-                        android:id="@+id/cb_main1"
-                        style="@style/BottomTabStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:drawableTop="@drawable/radio_btn1_selector"
-                        android:gravity="center"
-                        android:text="首页"/>
+            <RadioButton
+                    android:id="@+id/checkbox3"
+                    style="@style/BottomTabStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:drawableTop="@drawable/radio_btn4_selector"
+                    android:gravity="center"
+                    android:text="图片"/>
 
-                <CheckBox
-                        android:id="@+id/cb_main2"
-                        style="@style/BottomTabStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:checked="false"
-                        android:drawableTop="@drawable/radio_btn2_selector"
-                        android:gravity="center"
-                        android:text="文章"/>
-
-                <CheckBox
-                        android:id="@+id/cb_main4"
-                        style="@style/BottomTabStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:checked="false"
-                        android:drawableTop="@drawable/radio_btn4_selector"
-                        android:gravity="center"
-                        android:text="图片"/>
-
-            </LinearLayout>
-        </LinearLayout>
+        </RadioGroup>
     </LinearLayout>
-</layout>
+</LinearLayout>

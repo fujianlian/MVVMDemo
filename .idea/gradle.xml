@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib_opensource" />
+            <option value="$PROJECT_DIR$/module_login" />
             <option value="$PROJECT_DIR$/module_medical" />
             <option value="$PROJECT_DIR$/module_photo" />
           </set>
