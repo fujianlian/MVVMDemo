@@ -65,6 +65,6 @@ dependencies {
     if (!isModuleLogin.toBoolean()) {
         implementation project(":module_login")
     }
-    implementation 'com.alibaba:arouter-api:1.4.1'
+
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }
