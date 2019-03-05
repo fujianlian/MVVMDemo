@@ -1,8 +1,8 @@
 package com.example.module_photo
 
 import android.app.Application
-import android.databinding.ObservableArrayList
-import android.databinding.ObservableList
+import androidx.databinding.ObservableArrayList
+import androidx.databinding.ObservableList
 import android.util.Log
 import com.example.lib_opensource.bean.GankBean
 import com.example.lib_opensource.http.HttpModel

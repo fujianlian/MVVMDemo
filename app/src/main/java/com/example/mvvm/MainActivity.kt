@@ -3,24 +3,23 @@ package com.example.mvvm
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.lib_opensource.CommonSP
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val mFragments: ArrayList<Fragment> = ArrayList()
+    private val mFragments: ArrayList<androidx.fragment.app.Fragment> = ArrayList()
     var index = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         ARouter.getInstance().inject(this)
-        mFragments.add(ARouter.getInstance().build("/medical/main").navigation() as Fragment)
-        mFragments.add(ARouter.getInstance().build("/photo/main").navigation() as Fragment)
-        mFragments.add(ARouter.getInstance().build("/medical/main").navigation() as Fragment)
+        mFragments.add(ARouter.getInstance().build("/medical/main").navigation() as androidx.fragment.app.Fragment)
+        mFragments.add(ARouter.getInstance().build("/photo/main").navigation() as androidx.fragment.app.Fragment)
+        mFragments.add(ARouter.getInstance().build("/medical/main").navigation() as androidx.fragment.app.Fragment)
 
         val ft = supportFragmentManager.beginTransaction()
         ft.add(R.id.fl_main_container, mFragments[0]).commit()

@@ -1,6 +1,6 @@
 package com.example.module_photo
 
-import android.databinding.ObservableField
+import androidx.databinding.ObservableField
 import android.os.Bundle
 import com.example.lib_opensource.bean.GankBean
 import me.goldze.mvvmhabit.base.ItemViewModel

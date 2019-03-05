@@ -1,16 +1,7 @@
 package com.example.lib_opensource.http;
 
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import com.google.gson.Gson;
 import com.vise.xsnow.http.callback.ACallback;
-import com.vise.xsnow.http.mode.ApiCode;
 import me.goldze.mvvmhabit.utils.ToastUtils;
-import me.goldze.mvvmhabit.utils.Utils;
-import okhttp3.*;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author fujianlian Created on 2018/4/18 9:51

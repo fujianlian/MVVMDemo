@@ -1,7 +1,7 @@
 package com.example.module_photo
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.lib_opensource.CommonSP
 
