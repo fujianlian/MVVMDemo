@@ -53,15 +53,18 @@ android {
     dataBinding {
         enabled true
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     if (isModule.toBoolean()) {
         api project(":lib_opensource")
     } else {
         implementation project(":module_medical")
         implementation project(":module_photo")
     }
-
 }

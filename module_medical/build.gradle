@@ -50,6 +50,10 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 kapt {
@@ -60,11 +64,10 @@ kapt {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(":lib_opensource")
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':lib_opensource')
     if (!isModuleLogin.toBoolean()) {
         implementation project(":module_login")
     }
-
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }
